@@ -9,6 +9,11 @@ The application is deployed on Hugging Face Spaces. You can access it via the fo
 
 [**Fashion Product Recommendation System - Hugging Face**](https://huggingface.co/spaces/metehanayhan/FashionProductRecommendationSystem)
 
+![1](https://github.com/user-attachments/assets/ab8cdff5-06e8-4b3d-b790-0f067209b480)
+![2](https://github.com/user-attachments/assets/6008b67f-48cf-4926-a558-414387da501f)
+![3](https://github.com/user-attachments/assets/c83fabbf-b94d-4a60-b8e3-f57a5a8707bc)
+
+
 
 ## Overview
 
@@ -35,7 +40,7 @@ To use the recommendation system:
 1. Clone this repository:
     
     ```bash
-    git clone https://github.com/metehanayhan/fashion-product-recommendation-system.git
+    git clone https://github.com/metehanayhan/Fashion-Product-Recommendation-System.git
     cd fashion-product-recommendation-system
     ```
     
