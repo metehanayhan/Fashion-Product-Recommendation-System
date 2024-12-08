@@ -1,3 +1,4 @@
+[EN]
 # Fashion Product Recommendation System
 
 This repository contains the implementation of a fashion product recommendation system using deep learning and K-nearest neighbors. The project is designed to recommend visually similar products based on an uploaded image. The model utilizes the ResNet50 architecture to extract image features and K-nearest neighbors to find the closest matches.
@@ -60,3 +61,78 @@ To use the recommendation system:
 ## License
 
 This project is licensed under the MIT License.
+
+[TR]
+
+# Fashion Product Recommendation System
+
+Bu depo, derin öğrenme ve K-nearest neighbors yöntemlerini kullanarak geliştirilmiş bir moda ürünleri öneri sisteminin uygulamasını içermektedir. Proje, bir görsel yüklemesiyle benzer ürünleri öneren bir sistem tasarlanmıştır. Model, ResNet50 mimarisini kullanarak görsellerden özellik çıkarımı yapar ve K-nearest neighbors algoritmasıyla en yakın eşleşmeleri bulur.
+
+---
+
+## Streamlit Uygulaması
+
+Uygulama Hugging Face Spaces üzerinde yayınlanmıştır. Aşağıdaki bağlantıdan erişebilirsiniz:
+
+[**Fashion Product Recommendation System - Hugging Face**](https://huggingface.co/spaces/metehanayhan/FashionProductRecommendationSystem)
+
+![1](https://github.com/user-attachments/assets/ab8cdff5-06e8-4b3d-b790-0f067209b480)
+![2](https://github.com/user-attachments/assets/6008b67f-48cf-4926-a558-414387da501f)
+![3](https://github.com/user-attachments/assets/c83fabbf-b94d-4a60-b8e3-f57a5a8707bc)
+
+---
+
+## Genel Bakış
+
+Sistem, bir moda ürünü görselini girdisi olarak alır ve veri setindeki görseller arasından en benzer 5 ürünü önerir. Görsel özellikler, ImageNet üzerinde önceden eğitilmiş ResNet50 modeli kullanılarak çıkarılır. Benzerlik, K-nearest neighbors algoritması ile Euclidean mesafesi kullanılarak belirlenir.
+
+---
+
+## Veri Seti
+
+Veri seti, çeşitli moda ürünlerinin görsellerini içermektedir. Her görsel, önceden eğitilmiş ResNet50 modeline geçirilir ve çıkarılan özellikler hızlı erişim için bir pickle dosyasında saklanır.
+
+---
+
+## Model Mimarisi
+
+- **Özellik çıkarım modeli:** Üst katmanı çıkarılmış ResNet50, ardından boyutları azaltmak için bir GlobalMaxPool2D katmanı.
+- **Benzerlik arama:** Euclidean mesafesi kullanılarak K-nearest neighbors algoritması.
+
+---
+
+## Nasıl Kullanılır?
+
+Öneri sistemini kullanmak için:
+
+1. JPEG veya PNG formatında bir moda ürünü görseli yükleyin.
+2. Sistem, görseli işler ve veri setindeki en benzer 5 ürünü önerir.
+
+---
+
+## Kurulum
+
+1. Bu depoyu klonlayın:
+    
+    ```bash
+    git clone https://github.com/metehanayhan/Fashion-Product-Recommendation-System.git
+    cd fashion-product-recommendation-system
+    ```
+    
+2. Gerekli kütüphaneleri yükleyin:
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
+    
+3. Streamlit uygulamasını başlatın:
+    
+    ```bash
+    streamlit run app.py
+    ```
+
+---
+
+## Lisans
+
+Bu proje, MIT Lisansı altında lisanslanmıştır.
